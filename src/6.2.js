@@ -12,7 +12,7 @@ function randomDieRoll() {
 //listen for requests
 app.listen(3000);
 
-app.get('/', (req, res) => {
+app.get('/roll1', (req, res) => {
     // res.send('<p> page 1 </p>');
     // res.sendFile('./index.html', { root: __dirname})
     let num = randomDieRoll();
